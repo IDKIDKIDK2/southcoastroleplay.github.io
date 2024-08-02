@@ -1,57 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset and Global Styles */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #f4f4f4;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header {
-    background-color: #333;
+    background-color: #282c34;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
-header img {
-    max-width: 150px;
+header .logo {
+    max-width: 120px;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 2.5em;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
+    margin: 20px 0;
 }
 
 nav a {
     color: #fff;
-    padding: 15px 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    display: block;
+    border-radius: 5px;
+    background-color: #444;
+    margin: 0 5px;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
     background-color: #555;
 }
 
-main {
-    width: 80%;
-    margin: 20px auto;
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-section {
-    background-color: #fff;
-    padding: 20px;
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
     border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.highlights, .about, .features, .contact, .rules {
+    padding: 40px 0;
+}
+
+.highlight, .feature {
     margin-bottom: 20px;
 }
 
+.highlight img, .feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 footer {
-    background-color: #333;
+    background-color: #282c34;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
+    padding: 10px 0;
+    position: relative;
     bottom: 0;
 }
